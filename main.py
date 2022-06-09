@@ -77,17 +77,10 @@ def msg_handerl_main(message):
                   text= "the user: {} Banned ∅ " .format(text2)
                 )
                 except:
-                #هنا الراله
-            else :
-              bot.reply_to(
-                message,
-                f"{botMsg['ifMessageNotReplyBan']}"
-              )      
-        else : 
-            bot.reply_to(
-              message,
-              f"{botMsg['ifMsgNotFromSudo']}"
-            )        
+                  bot.reply_to(
+                    message,
+                    "err" #will this message change...
+                )  
 #...........................
 
     if message.text.lower() in usersMsg["hi"] : 
@@ -137,5 +130,7 @@ def leavA(message:types.ChatMemberUpdated):
         
 
 #polling
-print("BOT IS RUNNING...")
-bot.infinity_polling()
+def run():
+  print("BOT IS RUNNING...")
+  bot.infinity_polling()
+run()
