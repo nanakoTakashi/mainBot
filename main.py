@@ -1,7 +1,4 @@
 #imports
-from cgitb import html
-import os
-from tokenize import Token
 import telebot
 import random
 from telebot import types
