@@ -41,13 +41,23 @@ def msg_hand(message):
                                          url='https://t.me/MYMFYK')
     button3 = types.InlineKeyboardButton(text=". OWNER↬",
                                          url='https://t.me/nnk0o')
-
-    Keyboard.add(button1, button3)
-
-    bot.send_message(
-      message.chat.id,
+    button4 = types.InlineKeyboardButton(
+    text="⇄Main Group⇄",
+    url = "https://t.me/+NdPJMtQWM7A5YjA6"
+    )
+    button5 = types.InlineKeyboardButton(
+    text="+Add me+",
+    url = 'https://t.me/Kr_ol_ibot?startgroup=Commands&admin=ban_users+restrict_members+delete_messages+add_admins+change_info+invite_users+pin_messages+manage_call+manage_chat+manage_video_chats+promote_members'
+    )
+    row_width = 1
+    Keyboard.add(
+    button1, button4 ,
+    button3,button5)
+    bot.reply_to(
+                    message,
                     text= "welcome to kroli \n ↫a group telegram bot↬",
                      reply_markup=Keyboard)
+                     
 
 #...........
 
